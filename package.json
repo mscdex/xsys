@@ -1,0 +1,10 @@
+{ "name": "xsys",
+  "version": "0.0.1",
+  "author": "Brian White <mscdex@mscdex.net>",
+  "description": "A node.js binding to useful system-level functions",
+  "main": "./index",
+  "engines": { "node" : ">=0.6.0" },
+  "keywords": [ "system", "os", "binding", "utilities" ],
+  "licenses": [ { "type": "MIT", "url": "http://github.com/mscdex/xsys/raw/master/LICENSE" } ],
+  "repository" : { "type": "git", "url": "http://github.com/mscdex/xsys.git" }
+}
