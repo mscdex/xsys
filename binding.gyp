@@ -3,7 +3,7 @@
     {
       'target_name': 'fs',
       'sources': [
-        'fs.cc',
+        'src/fs.cc',
       ],
       'cflags': [ '-O3' ],
     },

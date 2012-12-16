@@ -146,8 +146,10 @@ Handle<Value> NGetSpace(const Arguments& args, int which) {
     baton->callback = Persistent<Function>::New(
       Local<Function>::Cast(args[args.Length() - 1])
     );
-    int status = uv_queue_work(uv_default_loop(), &baton->request,
-                               NSpaceWork, NSpaceAfter);
+    int status = uv_queue_work(uv_default_loop(),
+                               &baton->request,
+                               NSpaceWork,
+                               (uv_after_work_cb)NSpaceAfter);
     assert(status == 0);
     return Undefined();
   } else {
