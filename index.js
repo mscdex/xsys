@@ -1,5 +1,5 @@
 var fs = require('./build/Release/fs');
-
+exports.fs = exports.fs || {};
 exports.fs.getFreeSync = function(path) {
   if (!path || typeof path !== 'string')
     path = __dirname;
